@@ -1,6 +1,10 @@
 body {
-  background: #eee;
+  background: #F3C5FF;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 .character-list {
@@ -15,8 +19,8 @@ body {
   border-radius: 20px;
   overflow: hidden;
   padding-bottom: 15px;
-  background: #fff;
-  box-shadow: 0 0 10px #e6e6e6;
+  background: #C4FCEF;
+  box-shadow: 0 0 10px #4B4453;
   text-align: center;
   font-size: 14px;
   font-weight: 700;

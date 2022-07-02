@@ -1,19 +1,18 @@
-const resourceUrl = "https://rickandmortyapi.com/api/character/";
+const resourceUrl = 'https://rickandmortyapi.com/api/character/';
 
-axios
-  .get(resourceUrl)
-  .then(({ data: { results } }) => {
-    const html = results.map(
-      (item) =>
-        `<li>
+axios.
+get(resourceUrl).
+then(({ data: { results } }) => {
+  const html = results.map((item) =>
+  `<li>
         <img src="${item.image}" alt="" />
         ${item.name}
-      </li>`
-    );
+      </li>`);
 
-    $(".character-list")[0].innerHTML = html.join("");
-  })
-  .catch((err) => console.log(err));
+
+  $('.character-list')[0].innerHTML = html.join('');
+}).
+catch(err => console.log(err));
 
 /*
 const handleErrors = (response) => {
@@ -46,7 +45,7 @@ $.ajax({
         ${character.name}
       </li>`
     );
-
+    
     $('.character-list').html(html);
   },
   error: (err) => {
